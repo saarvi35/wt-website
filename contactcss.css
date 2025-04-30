@@ -58,6 +58,25 @@ button, textarea, input{
 button:hover , input:hover , textarea:hover{
     box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
-hr{
-    color: #f3f2cf;
+.icons{
+    display: flex;
+    gap: 50px;
+    margin-top: 15px;
+}
+.icons i{
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 20px;
+    display: inline-flex;
+    color: #b0ab4d;
+    transform: scale(1.5);
+    transition: transform 0.3s;
+
+}
+.icons i:hover{
+    transform: scale(1.7);
 }
