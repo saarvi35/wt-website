@@ -11,7 +11,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     font-family: 'Inter', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #F5F1E7;
    
 }
 
@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f3f2cf;
     padding: 20px 40px;
    
   }
@@ -117,7 +117,7 @@ header {
     height: 400px;
     padding: 30px;
     padding-top: 50px;
-    background-color: #b9bfc5;
+    background-color: #EAD8C0;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -199,7 +199,7 @@ header {
     }
   }
   .complete{
-    background-image: linear-gradient(to left, rgba(86, 93, 110, 0.8) , transparent) ,url("back.png");
+    background-image:  url("back.png");
     background-repeat: no-repeat;
     background-size: 110%;
     color: rgb(7, 2, 2);
@@ -208,4 +208,17 @@ header {
 
 
 
-  
+  /* courses page */
+  .heading{
+    margin: 20px;
+    padding: 20px;
+  }
+  .heading h1{
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .heading p{
+    font-size: 20px;
+    padding: 20px;
+  }
