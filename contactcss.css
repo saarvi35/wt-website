@@ -1,10 +1,60 @@
 *{
-    background-color: #fdfcea;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #0B2345;
 }
-.wrapper{
+.wrapper-inside{
     display: flex;
     padding: 50px;
+    color: rgb(223, 220, 236);
 }
+/* nav bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: transparent;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f96167;
+    transition: background 0.3s ease;
+    padding: 10px 18px;
+    border-radius: 999px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    color: rgb(223, 220, 236);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 999px;
+    transition: background 0.3s ease;
+  }
+  
+  .logo:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(217, 156, 156);
+  }
+  .nav-item:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f96167;
+  }
+  
+
+/* form */
 .part1{
     width: 50%;
     margin-top: -20px;
@@ -27,7 +77,7 @@
     border: none;
     border-radius: 5px;
     outline: none;
-    background-color: #f3f2cf;
+    background-color: rgb(223, 220, 236);
     padding: 10px;
 }
 .form textarea{
@@ -39,24 +89,23 @@
     border-radius: 5px;
     border: none;
     outline: none;
-    background-color: #f3f2cf;
+    background-color: rgb(223, 220, 236);
 }
 button{
     height: 50px;
     width: 200px;
     margin-left: 75px;
     align-self: flex-start;
-    background-color: #b0ab4d;
+    background-color: rgb(223, 220, 236);
     border: none;
     border-radius: 10px;
     font-size: 18px;
-    color: #f9f9f9;
 }
 button, textarea, input{
     transition: box-shadow 0.5s ease;
 }
 button:hover , input:hover , textarea:hover{
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(231, 224, 224, 1);
 }
 .icons{
     display: flex;
@@ -72,11 +121,12 @@ button:hover , input:hover , textarea:hover{
     border-radius: 50%;
     font-size: 20px;
     display: inline-flex;
-    color: #b0ab4d;
+    color: rgb(223, 220, 236);
     transform: scale(1.5);
     transition: transform 0.3s;
 
 }
 .icons i:hover{
     transform: scale(1.7);
+
 }

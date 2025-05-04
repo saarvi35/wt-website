@@ -10,64 +10,66 @@
 
 <body>
     <div class="wrapper">
-        <div class="complete">
 
-            <!-- navigation bar -->
-            <header>
-                
-                    <a href="#" class="logo">BrandName</a>
-                
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Courses</a></li>
-
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <!-- navigation bar -->
+        <nav class="navbar">
+            <div class="logo">CourseKit</div>
+            <ul class="nav-links">
+              <li><a href="#" class="nav-item">Home</a></li>
+              <li><a href="#" class="nav-item">Courses</a></li>
+              <li><a href="#" class="nav-item">Pricing</a></li>
+              <li><a href="#" class="nav-item">Contact</a></li>
+              <!-- <li><a href="#" class="nav-item">Log In</a></li> -->
+            </ul>
+          </nav>
 
             <!-- home page -->
-            <section class="hero container">
-                <h1>Welcome to Our Website</h1>
-                <p>Start Learning and Embrace </p>
-                <p>New skills for better future</p>
+            <section class="hero">
+                <div class="content">
+                    <h1>Welcome to Our Website</h1>
+                    <p>Start Learning and Embrace </p>
+                    <p>New skills for better future</p>
+                </div>
+                <div class="images">
+                    <img src="Image.png" id="image">
+                    <img src="dots.png" alt="" id="dots">
+                    <img src="Color.png" alt="" id="circle">
+                </div>
+                
             </section>
-        </div>
 
-        <!-- search bar -->
-        <div class="searchbar">
-            <h1>Search a book:</h1>
-            <input type="text" placeholder="search..." id="search">
-        </div>
-
-
-        <!-- book gallery -->
-        <div id="gallery">
-            <!-- in js -->
-        </div>
-
-        <!-- footer -->
-        <div class="footer">
-            <div class="desc">
-                <h1>BrandName</h1>
-                <p>It's an ideal opportunity to begin investing your energy such that illuminates you.</p>
-                <button>Contact Us</button>
+        <!-- courses -->
+        <section class="popular-courses">
+            <h2>Preview our most popular courses</h2>
+        
+            <div class="main-course">
+              <img src="" alt="Main Course Thumbnail">
+              <div class="overlay" onclick="playCourse('Digital Marketing and Webflow')">
+                <span>Digital Marketing and Webflow</span>
+              </div>
             </div>
-            <div class="nav">
-                <h1>Navigation</h1>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+        
+            <div class="course-list">
+              <div class="course-card" onclick="playCourse('The Power of Photography')">
+                <img src="" alt="Photography">
+                <p>The Power of Photography</p>
+              </div>
+              <div class="course-card" onclick="playCourse('Iconography Masterclass')">
+                <img src="" alt="Icons">
+                <p>Iconography Masterclass</p>
+              </div>
+              <div class="course-card" onclick="playCourse('Figma to Webflow Masterclass')">
+                <img src="" alt="Figma Webflow">
+                <p>Figma to Webflow Masterclass</p>
+              </div>
+              <div class="course-card" onclick="playCourse('The What, Why, and How of Design Systems')">
+                <img src="" alt="Design Systems">
+                <p>The What, Why, and How of Design Systems</p>
+              </div>
             </div>
-            <div class="course">
-                <h1>Popular Courses</h1>
-                <div class="list">course1</div>
-                <div class="list">course2</div>
-            </div>
-        </div>
+          </section>
+       
+          <!--  -->
     </div>
 
     <!-- js script -->
