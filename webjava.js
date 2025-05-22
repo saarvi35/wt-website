@@ -37,3 +37,15 @@ search.addEventListener("input" , function(){
     });
     galleryy.innerHTML = courses;
 });
+
+
+// toggle theme
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+
+//   courses
+  function playCourse(courseName) {
+    alert("Now playing: " + courseName);
+  }
+  
