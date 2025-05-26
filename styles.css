@@ -20,16 +20,15 @@
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 20px 60px;
+padding: 10px 60px;
 background: transparent;
 border-bottom: 1px solid white;
 }
 
 .logo {
-font-size: 24px;
+font-size: 27px;
 font-weight: bold;
 color: #ffc2c0;
-transition: background 0.3s ease;
 padding: 10px 18px;
 border-radius: 999px;
 }
@@ -49,16 +48,14 @@ font-weight: 500;
 padding: 10px 18px;
 border-radius: 999px;
 font-size: 20px;
+font-weight: bold;
 transition: background 0.3s ease;
 }
 
-.logo:hover{
-background-color: rgba(255, 255, 255, 0.1);
-color: rgb(217, 156, 156);
-}
+
 .nav-item:hover{
 background-color: rgba(255, 255, 255, 0.1);
-color: #f96167;
+color: #ff9895;
 }
 
 
@@ -74,6 +71,7 @@ color: #f96167;
 }
 .content{
   width: 50%;
+  margin: 60px 40px 0px 60px;
 }
 #course-heading{
   font-size: 75px;
@@ -111,14 +109,44 @@ color: #f96167;
 .button{
   margin:60px;
 }
-.button button{
+.button button {
   width: 200px;
   height: 60px;
   border-radius: 999px;
-  font-size: 20px;
-  background-color: #ffc2c0;
-  border-color: #ffc2c0;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #f96167 50%, #ff9895 50%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  border: 2px solid #ff9895;
+  cursor: pointer;
+  transition: background-position 0.4s ease, color 0.4s ease;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
 }
+
+.button button:hover {
+  background-position: top;
+}
+
+.button button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #0B2345;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.button button:hover a {
+  color: white;
+}
+
+
+
 /* courses */
 
 .popular-courses h2 {
@@ -229,12 +257,13 @@ padding-bottom: 70px;
 .searchbar input{
 width: 300px;
 height: 40px;
-border: 2px solid rgb(10, 5, 7);
+border: none;
+box-shadow: 0 0 15px rgba(231, 224, 224, 0.5);
 border-radius: 8px;
 padding: 10px;
 font-size: 15px;
 }
-#gallery{
+#card-container{
 display: flex;
 margin: 10px;
 padding: 10px;
@@ -243,42 +272,113 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 }
-#gallery img{
-width: 18vw;
-height: 18vw;
+
+.card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background-color: #fff;
+  font-family: sans-serif;
+  margin: 20px;
+  transition: transform 0.3s ease-in;
+}
+.card:hover{
+  box-shadow: 0 0 15px rgba(231, 224, 224, 0.7);
+  transform: scale(1.2);
+  
 }
 
-.img{
-display: flex;
-flex-direction: column;
-align-items: center;
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
-.img h5{
-font-size: 20px;
+
+.card-body {
+  padding: 16px;
 }
+
+.category {
+  font-size: 0.75rem;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.title-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  margin: 7px 0px;
+}
+
+.rating {
+  background-color: #ffd700;
+  color: #000;
+  border-radius: 5px;
+  padding: 2px 6px;
+  font-size: 0.85rem;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 5px 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #666;
+}
+
+.price {
+  font-weight: bold;
+  color: #1a73e8;
+}
+
 
 /* next section */
 .next{
   display: flex;
   padding: 100px;
   gap: 100px;
-  padding-top: 200px;
 }
-.phooto{
-  width: 790px;
+.phooto img{
+  width: 500px;
   height: 350px;
   border-radius: 10px;
-  border: 1px solid white;
-  background-image: url(A753FB1C-7C82-4ECB-AAE6-D7866CBCCEB8.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-
+  margin-top: 70px;
+  box-shadow: 0 0 15px rgba(231, 224, 224, 0.7);
 }
-.points p{
-  padding-top: 25px;
+.points h1{
+  font-size: 40px;
 }
-.points h2{
-  padding-bottom: 10px;
+.feauture{
+  display: flex;
+  gap: 8px;
+}
+.feauture img{
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+}
+.pointer h2{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.pointer p{
+  font-size: 17px;
 }
 
 /* Responsive */

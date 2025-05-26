@@ -62,8 +62,14 @@
 /* form */
 .part1{
     width: 50%;
-    margin-top: -20px;
-    font-size: 40px;
+    margin: 50px;
+}
+.part1 h1{
+    font-size: 80px;
+}
+.part1 p{
+    margin-top: 10px;
+    font-size: 25px;
 }
 
 .form{
